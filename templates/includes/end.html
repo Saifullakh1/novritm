@@ -1,0 +1,52 @@
+{% load static %}
+<section class="subs">
+    <div class="container sub">
+        <div>
+            <h1>Подпишитесь на рассылку новостей</h1>
+            <form action="#" method="post">
+                <input type="text" placeholder="Имя"/>
+                <input type="email" placeholder="Email"/>
+                <button type="submit">Подписаться<i class="fab fa-telegram-plane"></i></button>
+            </form>
+        </div>
+        <img src="{% static './img/Saly-26.png' %}" alt="">
+    </div>
+</section>
+
+
+<footer>
+    <div class="container footer">
+        <div class="footer_support">
+            <a href="#" class="footer_support__item"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#" class="footer_support__item"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="footer_support__item"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="footer_support__item"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="footer_support__item"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="footer_menu">
+            <a href="blog.html" class="footer_menu__item">Блог</a>
+            <a href="partners.html" class="footer_menu__item">Партнеры</a>
+            <a href="join.html" class="footer_menu__item">Присоединиться к нам</a>
+            <a href="projects.html" class="footer_menu__item">Проекты</a>
+            <a href="donation.html" class="footer_menu__item">Пожертвование</a>
+            <a href="education.html" class="footer_menu__item">Обучение</a>
+        </div>
+    </div>
+</footer>
+
+<div class="btn_info_fixed">
+    <div class="btn_info__content">
+        <a href="#"><i class="fas fa-map-marker-alt"></i>&nbsp;Ош, Джиннах 59 </a>
+        <a href="#"><i class="fas fa-phone-alt"></i>&nbsp;+996555999555</a>
+        <a href="#"><i class="fab fa-facebook"></i>&nbsp;@loremips</a>
+        <a href="#"><i class="fab fa-instagram"></i>&nbsp;@loremips.um </a>
+        <a href="#"> <i class="fab fa-youtube"></i>&nbsp;@loremips.um </a>
+        <a href="#"> <i class="fab fa-twitter"></i>&nbsp;@loremips.um </a>
+        <a href="#"> <i class="fab fa-telegram-plane"></i>&nbsp;@loremips.um </a>
+
+        <div class="fix"><img src="{% static './img/icons/ex.png' %}" alt="" class="btn_info_exit"></div>
+    </div>
+    <img src="{% static './img/icons/btn-info.png' %}" alt="" class="btn_info">
+</div>
+
+<script src="{% static './js/index.js' %}"></script>

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый ритм</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="{% static './css/styles.min.css' %}">
+    <link rel="stylesheet" href="{% static './css/reset.min.css' %}">
+</head>
+
+<body>
+<header>
+    {% include 'includes/navbar.html' %}
+</header>
+<div class="cls"></div>
+<div class="blog">
+    <div class="container">
+        <div class="rect">#блог</div>
+    </div>
+
+</div>
+<section class="blogs">
+    <div class="container">
+        <div class="blog_cards">
+            {% for blog in blogs %}
+                <a href="{% url 'blog_detail' slug=blog.slug %}" class="blog_cards__item"><img src="{{ blog.blog_image.image.url }}" width="373" height="373" alt=""></a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include 'includes/end.html' %}
+</body>
+
+</html>

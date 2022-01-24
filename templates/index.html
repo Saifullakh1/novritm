@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый ритм</title>
+    <link rel="icon" type="icon" href="{% static './img/logo.png' %}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static './css/styles.min.css' %}">
+    <link rel="stylesheet" href="'{% static './css/reset.min.css' %}">
+</head>
+
+<body>
+    <header>
+        {% include 'includes/navbar.html' %}
+    </header>
+    <div class="cls"></div>
+
+    <section class="welcome">
+        <div class="container">
+            <div class="df_blocks">
+                <div class="left_block">
+                    <h1>Давайте за чашечкой чая, <span class="blue">поговорим</span> о важном.</h1>
+                    <p>Сегодня началась масштабная 16 дневная кампания против насилия в отношении девочек, девушек и
+                        женщин. Но многие не знают цели кампании и о чем она.
+                    </p>
+                    <form action="#" method="post" class="subscribe">
+                        <input type="email" placeholder="Ваше email..." />
+                        <button type="submit">Подписаться<i class="fab fa-telegram-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <span class="block_head">#о_нас</span>
+        <h1 class="head_text">Добро пожаловать в Новый Ритм!</h1>
+        <div class="container main_blocks">
+            <div class="main_blocks__left">
+                <p> <b> Новый Ритм</b> — эта площадка, где молодые ребята могут вместе общаться, обмениваться идеями и
+                    повышать свои лидерские навыки и навыки командной работы, повышать свои знания по правам человека,
+                    гендерному равенству, окружающей среде и предотвращению конфликтов. Наша организация также является
+                    местом, где мы проводим большую часть своих мероприятий и событий, таких как различные воркшопы,
+                    встречи и тренинги.</p>
+            </div>
+            <div class="main_blocks__right">
+                <img src="{% static './img/large_logo.png' %}" alt="">
+            </div>
+        </div>
+        <div class="container main_blocks">
+            <div class="main_blocks__left">
+                <img src="{% static './img/Saly-32.svg' %}" alt="">
+            </div>
+            <div class="main_blocks__right">
+                <p><b>Идея</b> нашего объединения в том, чтобы быть пространством открытым ко всем людям вне зависимости
+                    от пола, гендерной идентичности, национальности, этнической принадлежности, религии, политических
+                    взглядов и любых других различий. <b>Цель</b> же заключается в создании пространства с хорошей
+                    атмосферой, где каждый и каждая будут чувствовать себя в безопасности и расслабленности — место для
+                    обмена идеями, где молодежь может обучиться новым навыкам и повысить свой потенциал в определенных
+                    тематических областях.</p>
+            </div>
+        </div>
+        <h1 class="head_text">Наше видение и цели</h1>
+        <div class="container main_blocks">
+            <div class="main_blocks__left">
+                <p> <b> Наше видение</b> — это мирный, демократичный и равноправный Кыргызстан, где услышаны голоса
+                    каждого человека и не существует дискриминации.</p><br>
+                <p><b> Наше цели</b> — способствовать активному, влиятельному и разнообразному гражданскому обществу;
+                    воспитывать активных граждан; и расширить горизонты будущих поколений, чтобы содействовать обществу,
+                    в котором соблюдаются права человека.Мы надеемся, что вы уделите время, чтобы узнать о нашей работе
+                    и присоединиться к нам!
+                </p>
+            </div>
+            <div class="main_blocks__right">
+                <img src="{% static './img/Saly-15.png' %}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <span class="block_head">#проекты</span>
+        <h1 class="head_text">НОВЫЙ РИТМ</h1>
+        <div class="container">
+            <div class="description">
+                <p><b>UNSCR</b> 1325 <b>Project</b> – 2016-2017</p>
+                <p>Название: «Молодые Агенты перемен — Борьба с дискриминацией основанной на признаках пола, возраста и
+                    этнической принадлежности». Основными целевыми группами мероприятий по наращиванию потенциала
+                    являются молодежь, молодежные организации, молодые женщины, учителя в южном регионе Кыргызстана.</p>
+            </div>
+            <div class="container pro_blocks">
+                <div class="pro_blocks__left">
+                    <iframe src="https://www.youtube.com/embed/TVZwrLcwpVo" frameborder="0" allowfullscreen class="video_to_pro"></iframe>
+                </div>
+                <div class="pro_blocks__right">
+                    <div class="pro_text">
+                        <h1>ЦЕЛЬ</h1><br>
+                        <p>В проекте участвуют три организации из Европы и Центральной Азии, а точнее: Польша,
+                            Кыргызстан и Швеция.
+                            Проект направлен на содействие деятельности по наращиванию транснационального потенциала и
+                            мобильности. Главной целью проекта является искоренение дискриминации по признакам пола,
+                            возраста и этнической принадлежности путем повышения потенциала молодежи на Юге Кыргызстана
+                            для того, чтобы создать демократический и инклюзивный Кыргызстан.
+                        </p><br>
+                        <a href="#" class="link_to_pro">Learn more<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container pro_blocks">
+                <div class="pro_blocks__left">
+                    <div class="pro_text">
+                        <h1>УЧАСТНИКИ</h1><br>
+                        <p>Основными целевыми группами мероприятий по наращиванию потенциала являются молодежь,
+                            молодежные организации, молодые женщины, учителя в южном регионе Кыргызстана.</p><br>
+                        <a href="#" class="link_to_pro">Learn more<i class="fas fa-chevron-right"></i></a>
+                    </div>
+
+                </div>
+                <div class="pro_blocks__right">
+                    <img src="{% static './img/blocks/18.04 1.jpg' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <a href="#" class="more">Show More <img src="{% static './img/icons/galaxy.png' %}" alt=""></a>
+    </section>
+
+
+    <section class="blogs">
+        <span class="block_head">#блог</span>
+        <div class="container">
+            <div class="blog_title"><img src="{% static './img/icons/ins.png' %}" alt=""></div>
+            <div class="blog_cards">
+                {% for blog in blogs %}
+                    <a href="{% url 'blog_detail' slug=blog.slug %}" class="blog_cards__item"><img src="{{ blog.blog_image.image.url }}" width="373" height="373" alt=""></a>
+                {% endfor %}
+            </div>
+        </div>
+        <a href="{% url 'blog_gallery' %}" class="more">Show More <img src="{% static './img/icons/galaxy.png' %}" alt=""></a>
+
+    </section>
+        {% include 'includes/end.html' %}
+</body>
+
+</html>
